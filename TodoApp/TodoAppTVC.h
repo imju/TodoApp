@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TodoAppTVC.h
 //  TodoApp
 //
 //  Created by bgbb on 10/15/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TodoAppTVC : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
 @end

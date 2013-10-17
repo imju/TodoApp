@@ -64,13 +64,13 @@
     NSString *msg = [self.tasksList objectAtIndex:indexPath.row];
     [cell.taskTextField setText:msg];
     cell.taskTextField.delegate = self;
+    NSLog(@"EditAtIndex:%d", self.editAtIndex);
     
     // show text field based on mode and enable editing if it was editable cell
     if ([self.actionMode  isEqualToString:EDIT_MODE_CONST]
         && indexPath.row == self.editAtIndex){
         cell.taskTextField.enabled = YES;
         [cell.taskTextField becomeFirstResponder];
-        [cell.taskTextField setText:msg];
     }else{
         cell.taskTextField.enabled = YES;
     }

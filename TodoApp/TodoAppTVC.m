@@ -114,10 +114,8 @@
     if(editing == YES)
     {
         [self.tableView setEditing:YES animated:YES];
-        
     } else {
-        //[self save];
-        //[self.tableView reloadData];
+        [self.tableView setEditing:editing animated:NO];
     }
 }
 
